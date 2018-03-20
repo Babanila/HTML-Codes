@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Exceptions in JS</title>
+<script>
+    function getName(){
+    var sName = prompt(" Enter your name please: ", "");
+    if(!sName || sName.length == 0)
+        throw new Error(" Your entered value is not permitted");
+    
+        alert(" Welcome to our website " + sName);
+    }
+
+    function testException(){
+        try{
+            getName();
+        }
+
+        catch(e){
+            alert(e.name + ": " + e.message);
+        }
+    }
+
+window.onload = testException;
+//console.log(getName);
+</script>
+</head>
+<body>
+</body>
+</html>
