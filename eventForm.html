@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events Form Events</title>
+    <link rel="stylesheet" href="/Users/becky/Documents/GitHub/CSS-Codes/eventHandler2.css" />
+</head>
+<body>
+<div id="page1">
+    <h1>List King</h1>
+    <form method="post" action="http://www.example.org/register" id="formSignUp">
+        <h2>Membership</h2>
+
+        <label for="package" class="selectbox"> Select a package: </label>
+        <select id="package">
+            <option value="annual">1 year ($50)</option>
+            <option value="monthly">1 month ($5)</option>
+        </select>
+        <div id="packageHint" class="tip"></div>
+
+        <input type="checkbox" id="terms" />
+        <label for="terms" class="checkbox"> Check to agree to terms &amp; conditions</label>
+        <div id="termsHint" class="warning"></div>
+
+        <input type="submit" value="next" />
+
+    </form>
+
+</div>
+    <div id="page2">
+        <h1>List King</h1>
+        <h2>Buy Groceries <span id="counter">1</span></h2>
+        <ul id="list">
+            <li>fresh figs</li>
+        </ul>
+        <div class="button"><a href="/additem" class="add">Add list item</a></div>
+    </div>
+
+
+    <div>
+        <br><br>
+        <form id="messageForm" action="http://example.org/">
+
+            <textarea id="message"></textarea><br>
+             <input type="submit" value="next" />
+
+        </form>
+    </div>
+<script src="/Users/becky/Documents/GitHub/JS-Codes/eventForm.js"></script>
+</body>
+</html>
